@@ -29,7 +29,7 @@ function LoginPage({ onLogin }) {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setBgIndex((prevIndex) => (prevIndex + 1) % backgrounds.length); // Change background every 5 seconds
+      setBgIndex((prevIndex) => (prevIndex + 1) % backgrounds.length); 
     }, 5000);
     return () => clearInterval(interval);
   }, [backgrounds.length]);
